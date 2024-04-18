@@ -1,0 +1,24 @@
+@use "sass:math";
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "variables";
+@import "functions_mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: $grey-color;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@import "btn";
+@import "header";

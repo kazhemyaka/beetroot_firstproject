@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.75.0"
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-and-nav {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+  }
+
+  &__logo {
+    width: 44.68px;
+    height: 35px;
+    margin: 32.5px 0;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $grey-color;
+    font-weight: 500;
+    line-height: $line-height;
+  }
+}
