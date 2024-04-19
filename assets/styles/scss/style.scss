@@ -16,9 +16,19 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1240px;
+  padding: 0 35px;
   margin: 0 auto;
+}
+
+h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: remify(80px);
+  font-weight: 700;
+  color: $violet-dark-color;
+  line-height: $line-height-small;
 }
 
 @import "btn";
 @import "header";
+@import "hero";

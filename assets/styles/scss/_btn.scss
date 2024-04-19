@@ -1,5 +1,6 @@
 .btn {
   &--arrow {
+    display: inline-block;
     font-weight: 500;
     text-decoration: none;
     color: $violet-dark-color;
@@ -15,7 +16,7 @@
       content: url("../../images/arrow-purple.svg");
       display: inline-block;
       width: 20px;
-      height: 20px;
+      height: 25px;
       margin-left: 20px;
       vertical-align: middle;
     }
@@ -27,6 +28,21 @@
       &::after {
         content: url("../../images/arrow-white.svg");
       }
+    }
+  }
+
+  &--regular {
+    display: inline-block;
+    text-decoration: none;
+    color: $white-color;
+    background-color: $violet-color;
+    padding: 22px 52px;
+    box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $violet-middle-color;
     }
   }
 }

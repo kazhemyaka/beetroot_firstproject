@@ -29,5 +29,10 @@
     color: $grey-color;
     font-weight: 500;
     line-height: $line-height;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: $violet-middle-color;
+    }
   }
 }
