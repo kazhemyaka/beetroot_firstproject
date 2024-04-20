@@ -1,0 +1,27 @@
+.who-we-are {
+  &__container {
+    margin-block: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 70px;
+    background-color: $pink-medium-color;
+    border-radius: 50px;
+    align-items: center;
+  }
+
+  &__text-container {
+    flex: 0 0 50%;
+  }
+
+  &__heading {
+    margin-bottom: 40px;
+  }
+
+  &__paragraph {
+    font-size: remify(18px);
+    font-weight: 500;
+  }
+}

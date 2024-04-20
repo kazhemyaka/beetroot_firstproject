@@ -435,12 +435,43 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Work Sans", sans-serif;
-  font-size: 5rem;
-  font-weight: 700;
   color: #212353;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5rem;
   line-height: 110%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 130%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 130%;
+}
+
+p {
+  line-height: 160%;
+}
+
+.link {
+  color: #212353;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0.005rem;
+  text-decoration: none;
 }
 
 .btn--arrow {
@@ -476,10 +507,12 @@ h1 {
   text-decoration: none;
   color: #fff;
   background-color: #9c69e2;
-  padding: 22px 52px;
+  padding: 16px 52px;
   box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  line-height: 160%;
 }
 .btn--regular:hover {
   background-color: #8a40ee;
@@ -549,4 +582,94 @@ h1 {
 }
 .hero__btn {
   margin-bottom: 35px;
+}
+
+.who-we-are__container {
+  margin-block: 100px;
+}
+.who-we-are__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 70px;
+  background-color: #fde8f5;
+  border-radius: 50px;
+  align-items: center;
+}
+.who-we-are__text-container {
+  flex: 0 0 50%;
+}
+.who-we-are__heading {
+  margin-bottom: 40px;
+}
+.who-we-are__paragraph {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.features__container {
+  margin-block: 100px;
+}
+.features__heading, .features__paragraph {
+  text-align: center;
+}
+.features__heading {
+  margin-bottom: 50px;
+}
+.features__paragraph {
+  margin-bottom: 80px;
+  max-width: 638px;
+  margin-inline: auto;
+}
+.features__cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  justify-content: flex-end;
+}
+.features__card {
+  flex: 0 0 34.18%;
+  min-height: 400px;
+  display: flex;
+  position: relative;
+  padding: 62px 70px 62px 100px;
+  border-radius: 50px;
+}
+.features__card--green {
+  background-color: #f0faf9;
+}
+.features__card--violet {
+  background-color: #f6f0fd;
+}
+.features__card--pink {
+  background-color: #fef0f8;
+}
+.features__card--blue {
+  background-color: #eaf6fc;
+}
+
+.card__img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-75%, -50%);
+}
+.card__text-container {
+  display: flex;
+  flex-direction: column;
+}
+.card__heading {
+  margin-bottom: 20px;
+}
+.card__paragraph {
+  flex: 1;
+}
+.card__link::after {
+  content: url("../../images/arrow-purple.svg");
+  display: inline-block;
+  width: 20px;
+  height: 23px;
+  margin-left: 20px;
+  vertical-align: middle;
 }

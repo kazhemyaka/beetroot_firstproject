@@ -21,14 +21,47 @@ body {
   margin: 0 auto;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: "Work Sans", sans-serif;
-  font-size: remify(80px);
-  font-weight: 700;
   color: $violet-dark-color;
-  line-height: $line-height-small;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: remify(80px);
+  line-height: 110%;
+}
+
+h2 {
+  font-size: remify(40px);
+  line-height: 130%;
+}
+
+h3 {
+  font-size: remify(24px);
+  line-height: 130%;
+}
+
+p {
+  line-height: 160%;
+}
+
+.link {
+  color: $violet-dark-color;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: remify(0.08px);
+  text-decoration: none;
 }
 
 @import "btn";
 @import "header";
 @import "hero";
+@import "whoweare";
+@import "features";
