@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:has(.header__checkbox:checked) .header__btn {
+      display: block;
+    }
   }
 
   &__logo-and-nav {
@@ -54,6 +58,10 @@
   &__btn {
     @include tablet {
       display: none;
+      position: absolute;
+      bottom: 20px;
+      left: 38%;
+      z-index: 6;
     }
   }
 
