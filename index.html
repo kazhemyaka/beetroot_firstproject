@@ -30,7 +30,7 @@
             </ul>
           </nav>
         </div>
-        <a href="#" class="header__btn btn--arrow">Request Demo</a>
+        <a href="#" class="header__btn btn btn--arrow">Request Demo</a>
       </div>
     </header>
     <main class="main">
@@ -43,7 +43,7 @@
               security, so you can store your data here safely but not be afraid
               of being stolen by others.
             </p>
-            <a href="#" class="hero__btn btn--regular">Learn more</a>
+            <a href="#" class="hero__btn btn btn--regular">Learn more</a>
           </div>
           <img
             src="assets/images/first-screen-img.avif"
@@ -94,7 +94,7 @@
               <div class="card__text-container">
                 <h3 class="card__heading">Search Data</h3>
                 <p class="card__paragraph">
-                  Don’t worry if your data is very large, the Data Warehoue
+                  Don’t worry if your data is very large, the Data Warehouse
                   provides a search engine, which is useful for making it easier
                   to find data effectively saving time.
                 </p>
@@ -151,44 +151,46 @@
           </div>
         </div>
       </section>
-      <section class="testmonials">
-        <div class="container testmonials__container">
-          <h2 class="testmonials__heading">Testimonials</h2>
-          <div class="testmonials__cards">
-            <div class="testmonials__card">
-              <img
-                src="assets/images/testmonial1.avif"
-                alt="Testmonial Image"
-                class="card__img--testmonial"
-              />
-              <div class="card__text-container">
-                <h4 class="card__heading">John Fang</h4>
-                <a href="#" class="card__link">wordfaang.com</a>
-                <p class="card__paragraph">
-                  Suspendisse ultrices at diam lectus nullam.
-                </p>
-                <p class="card__paragraph">
-                  Nisl, sagittis viverra enim erat tortor ultricies massa
-                  turpis. Arcu pulvinar aenean nam laoreet nulla.
-                </p>
+      <section class="testimonials">
+        <div class="container testimonials__container">
+          <div class="testimonials__wrapper">
+            <h2 class="testimonials__heading">Testimonials</h2>
+            <div class="testimonials__cards">
+              <div class="testimonials__card">
+                <img
+                  src="assets/images/testmonial-1.avif"
+                  alt="Testmonial Image"
+                  class="card__img--testmonial"
+                />
+                <div class="card__text-container">
+                  <h4 class="card__heading--testmonial">John Fang</h4>
+                  <a href="#" class="link card__link--noarrow">wordfaang.com</a>
+                  <p class="card__paragraph">
+                    Suspendisse ultrices at diam lectus nullam.
+                  </p>
+                  <p class="card__paragraph">
+                    Nisl, sagittis viverra enim erat tortor ultricies massa
+                    turpis. Arcu pulvinar aenean nam laoreet nulla.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="testmonials__card">
-              <img
-                src="assets/images/testmonial2.avif"
-                alt="Testmonial Image"
-                class="card__img--testmonial"
-              />
-              <div class="card__text-container">
-                <h4 class="card__heading">Hanna Wilson</h4>
-                <a href="#" class="card__link">wordfaang.com</a>
-                <p class="card__paragraph">
-                  Suspendisse ultrices at diam lectus nullam.
-                </p>
-                <p class="card__paragraph">
-                  Nisl, sagittis viverra enim erat tortor ultricies massa
-                  turpis. Arcu pulvinar aenean nam laoreet nulla.
-                </p>
+              <div class="testimonials__card">
+                <img
+                  src="assets/images/testmonial-2.avif"
+                  alt="Testmonial Image"
+                  class="card__img--testmonial"
+                />
+                <div class="card__text-container">
+                  <h4 class="card__heading--testmonial">Hanna Wilson</h4>
+                  <a href="#" class="link card__link--noarrow">wordfaang.com</a>
+                  <p class="card__paragraph">
+                    Suspendisse ultrices at diam lectus nullam.
+                  </p>
+                  <p class="card__paragraph">
+                    Nisl, sagittis viverra enim erat tortor ultricies massa
+                    turpis. Arcu pulvinar aenean nam laoreet nulla.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -199,14 +201,14 @@
       <div class="container footer__container">
         <div class="footer__try">
           <div class="footer__text-container">
-            <h3 class="footer__heading">Try for free!</h3>
+            <h2 class="footer__heading">Try for free!</h2>
             <p class="footer__paragraph">
               Get limited 1 week free try our features!
             </p>
           </div>
           <div class="footer__buttons">
-            <a href="#" class="footer__btn">Learn more</a>
-            <a href="#" class="footer__btn">Request Demo</a>
+            <a href="#" class="footer__btn btn btn--regular-pink">Learn more</a>
+            <a href="#" class="footer__btn btn btn--arrow">Request Demo</a>
           </div>
         </div>
         <div class="footer__contacts-and-nav">
@@ -215,17 +217,21 @@
               <svg class="footer__logo">
                 <use xlink:href="assets/images/Logo.svg#Logo"></use>
               </svg>
-              <span class="footer__logo-name"></span>
+              <span class="footer__logo-name">DataWarehouse</span>
             </div>
             <p class="footer__address">
               Warehouse Society, 234 Bahagia Ave Street PRBW 29281
             </p>
-            <a href="mailto:info@warehouse.project">info@warehouse.project</a>
-            <a href="tel:+1-232-3434">1-232-3434 (Main)</a>
+            <a href="mailto:info@warehouse.project" class="link footer__link"
+              >info@warehouse.project</a
+            >
+            <a href="tel:+1-232-3434" class="link footer__link"
+              >1-232-3434 (Main)</a
+            >
           </div>
           <nav class="footer__nav">
             <h5 class="nav__heading">About</h5>
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--column">
               <li class="nav__item">
                 <a href="#" class="nav__link">Profile</a>
               </li>
@@ -242,7 +248,7 @@
           </nav>
           <nav class="footer__nav">
             <h5 class="nav__heading">Help</h5>
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--column">
               <li class="nav__item">
                 <a href="#" class="nav__link">Support</a>
               </li>
@@ -261,26 +267,28 @@
             </ul>
           </nav>
           <div class="footer__socials">
-            <h5 class="footer__heading"></h5>
-            <a href="#" class="footer__social">
-              <svg class="footer__social-icon">
-                <use xlink:href="assets/images/socials.svg#facebook"></use>
-              </svg>
-            </a>
-            <a href="#" class="footer__social">
-              <svg class="footer__social-icon">
-                <use xlink:href="assets/images/socials.svg#twitter"></use>
-              </svg>
-            </a>
-            <a href="#" class="footer__social">
-              <svg class="footer__social-icon">
-                <use xlink:href="assets/images/socials.svg#instagram"></use>
-              </svg>
-            </a>
+            <h5 class="footer__heading">Social Media</h5>
+            <div class="footer__socials-container">
+              <a href="#" class="footer__social">
+                <svg class="footer__social-icon footer__social-icon--facebook">
+                  <use href="assets/images/socials.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social">
+                <svg class="footer__social-icon footer__social-icon--twitter">
+                  <use href="assets/images/socials.svg#twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__social">
+                <svg class="footer__social-icon footer__social-icon--instagram">
+                  <use href="assets/images/socials.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-        <span>
-          © Datawarehouse™, 2020. All rights reserved.<br />Company Registration
+        <span class="footer__copyright">
+          © Datawarehouse™, 2020. All rights reserved. Company Registration
           Number: 21479524.
         </span>
       </div>

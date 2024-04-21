@@ -48,15 +48,27 @@ h3 {
   line-height: 130%;
 }
 
+h4 {
+  font-weight: 500;
+  line-height: 160%;
+}
+
+h5 {
+  font-weight: 600;
+  line-height: 160%;
+  color: $violet-dark-color;
+}
+
 p {
   line-height: 160%;
 }
 
 .link {
-  color: $violet-dark-color;
-  font-weight: 700;
+  color: $violet-color;
+  font-size: remify(14px);
+  font-weight: 500;
   line-height: 160%;
-  letter-spacing: remify(0.08px);
+  letter-spacing: remify(0.14px);
   text-decoration: none;
 }
 
@@ -65,3 +77,5 @@ p {
 @import "hero";
 @import "whoweare";
 @import "features";
+@import "testimonials";
+@import "footer";

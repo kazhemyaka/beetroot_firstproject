@@ -1,6 +1,6 @@
 .features {
   &__container {
-    margin-block: 100px;
+    margin-block: 120px;
   }
 
   &__heading,
@@ -36,19 +36,23 @@
     border-radius: 50px;
 
     &--green {
-      background-color: $green-light-color;
+      background: $green-light-color url("../../images/bg-image-1.svg")
+        no-repeat right 50px top 20px;
     }
 
     &--violet {
-      background-color: $violet-light-color;
+      background: $violet-light-color url("../../images/bg-image-2.svg")
+        no-repeat bottom 20px right 20px;
     }
 
     &--pink {
-      background-color: $pink-light-color;
+      background: $pink-light-color url("../../images/bg-image-3.svg") no-repeat
+        top 20px right 20px;
     }
 
     &--blue {
-      background-color: $blue-light-color;
+      background: $blue-light-color url("../../images/bg-image-4.svg") no-repeat
+        center;
     }
   }
 }
@@ -75,6 +79,11 @@
   }
 
   &__link {
+    color: $violet-dark-color;
+    font-weight: 700;
+    letter-spacing: remify(0.08px);
+    font-size: remify(16px);
+
     &::after {
       content: url("../../images/arrow-purple.svg");
       display: inline-block;

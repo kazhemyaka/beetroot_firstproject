@@ -1,0 +1,144 @@
+.footer {
+  &__container {
+    margin-block: 120px;
+    color: $violet-dark-color;
+  }
+
+  &__try {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    font-size: remify(18px);
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__contacts-and-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 100px;
+  }
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  &__logo {
+    width: 49px;
+    height: 35px;
+  }
+
+  &__logo-name {
+    font-size: remify(20px);
+    font-weight: 600;
+    line-height: 160%;
+  }
+
+  &__contacts {
+    flex-basis: 42.73%;
+  }
+
+  &__nav {
+    &:first-of-type {
+      flex-basis: 21.36%;
+    }
+
+    flex-basis: 20.51%;
+  }
+
+  &__socials {
+    flex-basis: 15.38%;
+  }
+
+  &__socials-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address {
+    max-width: 268px;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: remify(0.16px);
+    margin-bottom: 10px;
+  }
+
+  &__copyright {
+    max-width: 275px;
+    display: block;
+    font-size: remify(12px);
+    font-weight: 300;
+    line-height: 180%;
+    letter-spacing: remify(0.12px);
+  }
+
+  &__link {
+    display: block;
+    font-size: remify(16px);
+    font-weight: 400;
+    color: $violet-dark-color;
+    letter-spacing: remify(0.16px);
+    line-height: 180%;
+
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__social-icon {
+    --fill-color: #{$grey-light-color};
+    --logo-color: #{$white-color};
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+  }
+
+  &__social {
+    &:hover .footer__social-icon {
+      &--facebook {
+        --stroke-color: #{$facebook-color};
+        --logo-color: #{$facebook-color};
+        --fill-color: #{$white-color};
+      }
+
+      &--twitter {
+        --stroke-color: #{$twitter-color};
+        --logo-color: #{$twitter-color};
+        --fill-color: #{$white-color};
+      }
+
+      &--instagram {
+        --stroke-color: #{$instagram-color};
+        --logo-color: #{$instagram-color};
+        --fill-color: #{$white-color};
+      }
+    }
+  }
+}
+
+.nav {
+  &__heading {
+    margin-bottom: 40px;
+    margin-top: 5px;
+  }
+
+  &__list {
+    &--column {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
