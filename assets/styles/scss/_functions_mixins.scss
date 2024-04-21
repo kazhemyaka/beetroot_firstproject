@@ -3,3 +3,15 @@
   $rem-value: math.div($value, $base-value);
   @return $rem-value * 1rem;
 }
+
+@mixin tablet {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}

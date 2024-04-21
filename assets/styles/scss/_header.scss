@@ -11,10 +11,114 @@
     gap: 120px;
   }
 
+  &__nav {
+    @include tablet {
+      display: none;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background-color: $white-color;
+      padding: 100px;
+      z-index: 2;
+    }
+  }
+
   &__logo {
     width: 44.68px;
     height: 35px;
     margin: 32.5px 0;
+  }
+
+  &__burger {
+    position: absolute;
+    height: 26px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    z-index: 3;
+
+    @include tablet {
+      display: flex;
+      right: 35px;
+    }
+
+    @include mobile {
+      right: 20px;
+    }
+  }
+
+  &__btn {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    z-index: 6;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+
+    @include tablet {
+      display: block;
+      right: 35px;
+    }
+
+    @include mobile {
+      right: 20px;
+    }
+
+    &:checked {
+      & ~ .header__burger {
+        & .burger__line1 {
+          transform: rotate(45deg);
+        }
+
+        & .burger__line2 {
+          transform: scale(0);
+        }
+
+        & .burger__line3 {
+          transform: rotate(-45deg);
+        }
+      }
+
+      & ~ .header__nav {
+        display: flex;
+      }
+    }
+  }
+}
+
+.burger {
+  &__line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: $violet-dark-color;
+  }
+
+  &__line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  &__line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &__line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
   }
 }
 
@@ -22,6 +126,15 @@
   &__list {
     display: flex;
     gap: 40px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      font-size: remify(24px);
+    }
   }
 
   &__link {

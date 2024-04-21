@@ -434,6 +434,11 @@ body {
   padding: 0 35px;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 
 h1,
 h2,
@@ -542,15 +547,116 @@ p {
   align-items: center;
   gap: 120px;
 }
+@media screen and (max-width: 900px) {
+  .header__nav {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 100px;
+    z-index: 2;
+  }
+}
 .header__logo {
   width: 44.68px;
   height: 35px;
   margin: 32.5px 0;
 }
+.header__burger {
+  position: absolute;
+  height: 26px;
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  z-index: 3;
+}
+@media screen and (max-width: 900px) {
+  .header__burger {
+    display: flex;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__burger {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header__btn {
+    display: none;
+  }
+}
+.header__checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  z-index: 6;
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .header__checkbox {
+    display: block;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header__checkbox {
+    right: 20px;
+  }
+}
+.header__checkbox:checked ~ .header__burger .burger__line1 {
+  transform: rotate(45deg);
+}
+.header__checkbox:checked ~ .header__burger .burger__line2 {
+  transform: scale(0);
+}
+.header__checkbox:checked ~ .header__burger .burger__line3 {
+  transform: rotate(-45deg);
+}
+.header__checkbox:checked ~ .header__nav {
+  display: flex;
+}
+
+.burger__line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #212353;
+}
+.burger__line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.burger__line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.burger__line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
 
 .nav__list {
   display: flex;
   gap: 40px;
+}
+@media screen and (max-width: 900px) {
+  .nav__list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
 }
 .nav__link {
   text-decoration: none;
