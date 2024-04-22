@@ -4,6 +4,13 @@
     justify-content: space-between;
     margin: 100px auto;
     position: relative;
+
+    @media screen and (max-width: 1190px) {
+      position: static;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      gap: 20px;
+    }
   }
 
   &__img {
@@ -15,15 +22,28 @@
     bottom: 0;
     right: 35px;
     object-fit: scale-down;
+
+    @media screen and (max-width: 1190px) {
+      position: static;
+    }
   }
 
   &__text-container {
     flex: 0 0 60%;
     z-index: 1;
+
+    @media screen and (max-width: 1190px) {
+      flex: 100%;
+      text-align: center;
+    }
   }
 
   &__heading {
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1190px) {
+      font-size: remify(50px);
+    }
   }
 
   &__paragraph {
@@ -32,6 +52,10 @@
     font-size: remify(18px);
     font-weight: 500;
     line-height: 160%;
+
+    @media screen and (max-width: 1190px) {
+      max-width: none;
+    }
   }
 
   &__btn {

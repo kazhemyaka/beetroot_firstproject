@@ -3,10 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &:has(.header__checkbox:checked) .header__btn {
-      display: block;
-    }
   }
 
   &__logo-and-nav {
@@ -19,8 +15,8 @@
     @include tablet {
       display: none;
       position: fixed;
-      height: 100%;
-      width: 100%;
+      height: 100vh;
+      width: 100vw;
       top: 0;
       left: 0;
       background-color: $white-color;
@@ -57,11 +53,11 @@
 
   &__btn {
     @include tablet {
+      margin-right: 70px;
+    }
+
+    @include mobile {
       display: none;
-      position: absolute;
-      bottom: 20px;
-      left: 38%;
-      z-index: 6;
     }
   }
 

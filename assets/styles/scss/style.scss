@@ -16,7 +16,8 @@ body {
 }
 
 body:has(.header__checkbox:checked) {
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .container {
