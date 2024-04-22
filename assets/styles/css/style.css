@@ -431,7 +431,6 @@ body {
 
 body:has(.header__checkbox:checked) {
   overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 .container {
@@ -896,9 +895,13 @@ p {
     position: static;
     transform: none;
     width: 100%;
-    height: -moz-min-content;
-    height: min-content;
-    align-self: center;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .card__img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .card__text-container {
