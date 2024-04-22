@@ -2,7 +2,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-block: 100px;
     position: relative;
 
     @include laptop {
@@ -10,6 +11,10 @@
       flex-wrap: wrap-reverse;
       justify-content: center;
       gap: 20px;
+    }
+
+    @include mobile {
+      margin-block-start: 20px;
     }
   }
 
@@ -44,6 +49,10 @@
     @include laptop {
       font-size: remify(50px);
     }
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__paragraph {
@@ -55,6 +64,10 @@
 
     @include laptop {
       max-width: none;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
     }
   }
 

@@ -686,7 +686,8 @@ p {
 .hero__container {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto;
+  margin: 0 auto;
+  margin-block: 100px;
   position: relative;
 }
 @media screen and (max-width: 1190px) {
@@ -695,6 +696,11 @@ p {
     flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero__container {
+    margin-block-start: 20px;
   }
 }
 .hero__img {
@@ -731,6 +737,11 @@ p {
     font-size: 3.125rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .hero__heading {
+    margin-bottom: 30px;
+  }
+}
 .hero__paragraph {
   margin-bottom: 50px;
   max-width: 370px;
@@ -741,6 +752,11 @@ p {
 @media screen and (max-width: 1190px) {
   .hero__paragraph {
     max-width: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero__paragraph {
+    margin-bottom: 30px;
   }
 }
 .hero__btn {
@@ -985,6 +1001,11 @@ p {
 .footer__container {
   margin-block: 120px;
   color: #212353;
+}
+@media screen and (max-width: 600px) {
+  .footer__container {
+    margin-block-end: 50px;
+  }
 }
 .footer__try {
   display: flex;

@@ -2,6 +2,10 @@
   &__container {
     margin-block: 120px;
     color: $violet-dark-color;
+
+    @include mobile {
+      margin-block-end: 50px;
+    }
   }
 
   &__try {
