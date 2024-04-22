@@ -136,8 +136,13 @@
       gap: 20px;
       width: 100%;
       justify-content: center;
-      align-items: center;
+    }
+  }
+
+  .header &__list {
+    @include tablet {
       font-size: remify(24px);
+      align-items: center;
     }
   }
 

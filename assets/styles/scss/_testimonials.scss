@@ -8,18 +8,32 @@
       center;
     padding: 80px 70px;
     border-radius: 50px;
+
+    @include mobile {
+      padding: 80px 20px;
+    }
   }
 
   &__heading {
     text-align: center;
     margin-bottom: 80px;
     color: $grey-color;
+
+    @include mobile {
+      font-size: remify(35px);
+    }
   }
 
   &__cards {
     display: flex;
     justify-content: space-between;
     gap: 100px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: center;
+    }
   }
 
   &__card {
@@ -33,6 +47,10 @@
 
     .link {
       margin-bottom: 18.69px;
+    }
+
+    @include mobile {
+      flex-wrap: wrap;
     }
   }
 }

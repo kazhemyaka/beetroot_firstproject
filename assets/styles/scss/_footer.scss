@@ -8,6 +8,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__text-container {
+    @include tablet {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__heading {
@@ -21,12 +35,23 @@
   &__buttons {
     display: flex;
     gap: 30px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__contacts-and-nav {
     display: flex;
     justify-content: space-between;
     margin-block: 100px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 50px;
+      justify-content: center;
+    }
   }
 
   &__logo-container {
@@ -34,6 +59,10 @@
     align-items: center;
     gap: 20px;
     margin-bottom: 60px;
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__logo {
@@ -54,6 +83,10 @@
   &__nav {
     &:first-of-type {
       flex-basis: 21.36%;
+
+      @include tablet {
+        flex-basis: 100%;
+      }
     }
 
     flex-basis: 20.51%;
@@ -63,9 +96,23 @@
     flex-basis: 15.38%;
   }
 
+  &__contacts,
+  &__nav,
+  &__socials {
+    @include tablet {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+
   &__socials-container {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
+
+    @include tablet {
+      justify-content: center;
+    }
   }
 
   &__address {
@@ -74,6 +121,10 @@
     line-height: 180%;
     letter-spacing: remify(0.16px);
     margin-bottom: 10px;
+
+    @include tablet {
+      max-width: none;
+    }
   }
 
   &__copyright {
@@ -83,6 +134,11 @@
     font-weight: 300;
     line-height: 180%;
     letter-spacing: remify(0.12px);
+
+    @include tablet {
+      text-align: center;
+      margin-inline: auto;
+    }
   }
 
   &__link {
@@ -103,7 +159,6 @@
     --logo-color: #{$white-color};
     width: 50px;
     height: 50px;
-    transition: all 0.3s ease;
   }
 
   &__social {

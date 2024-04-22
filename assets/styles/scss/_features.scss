@@ -24,6 +24,17 @@
     row-gap: 50px;
     column-gap: 200px;
     justify-content: flex-end;
+
+    @include laptop {
+      gap: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card {
@@ -54,6 +65,16 @@
       background: $blue-light-color url("../../images/bg-image-4.svg") no-repeat
         center;
     }
+
+    @include laptop {
+      padding: 50px 25px;
+      gap: 20px;
+    }
+
+    @include tablet {
+      padding: 50px;
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -63,11 +84,27 @@
     left: 0;
     top: 50%;
     transform: translate(-75%, -50%);
+
+    @include laptop {
+      position: static;
+      transform: none;
+      width: 100%;
+      height: min-content;
+      align-self: center;
+    }
   }
 
   &__text-container {
     display: flex;
     flex-direction: column;
+
+    @include laptop {
+      flex: 0 0 50%;
+    }
+
+    @include tablet {
+      flex: unset;
+    }
   }
 
   &__heading {

@@ -4,6 +4,12 @@
   @return $rem-value * 1rem;
 }
 
+@mixin laptop {
+  @media screen and (max-width: 1190px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (max-width: 900px) {
     @content;

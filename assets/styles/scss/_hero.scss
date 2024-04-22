@@ -5,7 +5,7 @@
     margin: 100px auto;
     position: relative;
 
-    @media screen and (max-width: 1190px) {
+    @include laptop {
       position: static;
       flex-wrap: wrap-reverse;
       justify-content: center;
@@ -23,7 +23,7 @@
     right: 35px;
     object-fit: scale-down;
 
-    @media screen and (max-width: 1190px) {
+    @include laptop {
       position: static;
     }
   }
@@ -32,7 +32,7 @@
     flex: 0 0 60%;
     z-index: 1;
 
-    @media screen and (max-width: 1190px) {
+    @include laptop {
       flex: 100%;
       text-align: center;
     }
@@ -41,7 +41,7 @@
   &__heading {
     margin-bottom: 50px;
 
-    @media screen and (max-width: 1190px) {
+    @include laptop {
       font-size: remify(50px);
     }
   }
@@ -53,7 +53,7 @@
     font-weight: 500;
     line-height: 160%;
 
-    @media screen and (max-width: 1190px) {
+    @include laptop {
       max-width: none;
     }
   }
