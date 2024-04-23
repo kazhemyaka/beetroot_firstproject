@@ -64,6 +64,13 @@
     }
   }
 
+  &__heading {
+    &--testmonial {
+      font-weight: 500;
+      line-height: 160%;
+    }
+  }
+
   &__link {
     &--noarrow {
       content: none;

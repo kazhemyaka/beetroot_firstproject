@@ -57,11 +57,6 @@ h3 {
 }
 
 h4 {
-  font-weight: 500;
-  line-height: 160%;
-}
-
-h5 {
   font-weight: 600;
   line-height: 160%;
   color: $violet-dark-color;
@@ -87,3 +82,14 @@ p {
 @import "features";
 @import "testimonials";
 @import "footer";
+
+.link,
+.nav__link,
+.footer__social,
+.btn {
+  &:focus-visible {
+    outline: remify(2px) solid $violet-color;
+    outline-offset: remify(4px);
+    border-radius: 30px;
+  }
+}
