@@ -6,7 +6,7 @@
   &__wrapper {
     background: $blue-medium-color url("../../images/bg-image-5.svg") no-repeat
       center;
-    padding: 80px 70px;
+    padding: 79px 70px;
     border-radius: 50px;
 
     @include mobile {
@@ -16,7 +16,7 @@
 
   &__heading {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 68px;
     color: $grey-color;
 
     @include mobile {

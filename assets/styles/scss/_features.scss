@@ -9,13 +9,14 @@
   }
 
   &__heading {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   &__paragraph {
     margin-bottom: 80px;
     max-width: 638px;
     margin-inline: auto;
+    font-size: remify(18px);
   }
 
   &__cards {

@@ -7,12 +7,14 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
   border-radius: 50px;
+  font-size: remify(18px);
 
   &--arrow {
     color: $violet-dark-color;
     letter-spacing: remify(0.08px);
     padding: 16px 23px;
     border: 1px solid #9c69e2;
+    font-size: remify(16px);
 
     &::after {
       content: url("../../images/arrow-purple.svg");
