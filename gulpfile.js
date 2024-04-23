@@ -34,7 +34,7 @@ function browsersyncReload(cb) {
 }
 
 function watchTask() {
-  watch("*.html", browsersyncReload);
+  watch("./html/*.html", series(htmlTask, browsersyncReload));
   watch("./assets/styles/**/*.scss", series(sassTask, browsersyncReload));
 }
 
